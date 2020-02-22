@@ -1,0 +1,156 @@
+body {
+  font-size: 12px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: 100%;
+}
+body .wrapper {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 60px;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+body .wrapper .song-img {
+  position: relative;
+  width: 70%;
+  height: 0;
+  padding-top: 70%;
+  margin: 0 auto;
+}
+body .wrapper .song-img .img-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 50%;
+  background: #000;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+body .wrapper .song-img .img-box img {
+  width: 75%;
+  height: 75%;
+  border-radius: 50%;
+}
+body .wrapper .song-info {
+  width: 100%;
+  text-align: center;
+  height: 100px;
+  color: #fff;
+  margin-top: 20px;
+}
+body .wrapper .song-info .song-name {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+body .wrapper .song-info .singer-name {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+body .wrapper .song-info .album-name {
+  font-size: 12px;
+}
+body .wrapper .pro {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: flex;
+}
+body .wrapper .pro .cur-time,
+body .wrapper .pro .all-time {
+  width: 60px;
+  height: 40px;
+  color: #fff;
+  line-height: 40px;
+  text-align: center;
+}
+body .wrapper .pro .pro-wrap {
+  position: relative;
+  -webkit-box-flex: 1;
+          flex: 1;
+  overflow: hidden;
+}
+body .wrapper .pro .pro-wrap .pro-bottom,
+body .wrapper .pro .pro-wrap .pro-top {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  left: 0;
+  top: 19px;
+  background: rgba(255, 255, 255, 0.4);
+}
+body .wrapper .pro .pro-wrap .pro-top {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  background: #fff;
+}
+body .wrapper .pro .pro-wrap .pro-top .slider {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: -11px;
+  top: -10px;
+}
+body .wrapper .pro .pro-wrap .pro-top .slider::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: 6px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #fff;
+}
+body .wrapper .control {
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: -webkit-box;
+  display: flex;
+}
+body .wrapper .control .btn {
+  position: relative;
+  -webkit-box-flex: 1;
+          flex: 1;
+  height: 100%;
+  text-align: center;
+}
+body .wrapper .control .btn .iconfont {
+  font-size: 30px;
+  color: #fff;
+  line-height: 60px;
+}
+body .wrapper .control .btn .icon-xihuan,
+body .wrapper .control .btn .icon-xihuan1 {
+  position: absolute;
+  left: 18px;
+  display: none;
+}
+body .wrapper .control .btn .icon-xihuan1 {
+  font-size: 29px;
+}
+body .wrapper .control .btn .icon-bofangsanjiaoxing {
+  position: absolute;
+  right: 12px;
+  font-size: 32px;
+  top: -1px;
+  display: none;
+}
+body .wrapper .control .btn .icon-zanting {
+  position: absolute;
+  font-size: 29px;
+  right: 16px;
+  top: 2px;
+  display: none;
+}
+body .wrapper .control .btn .active {
+  display: block;
+}

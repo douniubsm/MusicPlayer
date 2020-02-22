@@ -1,0 +1,170 @@
+body {
+    font-size: 12px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: 100%;
+
+    .wrapper {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        padding-top: 60px;
+        box-sizing: border-box;
+        background-color: rgba(0, 0, 0, .2);
+
+        .song-img {
+            position: relative;
+            width: 70%;
+            height: 0;
+            padding-top: 70%;
+            margin: 0 auto;
+
+            .img-box {
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                border-radius: 50%;
+                background: #000;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                img {
+                    width: 75%;
+                    height: 75%;
+                    border-radius: 50%;
+                }
+            }
+        }
+
+        .song-info {
+            width: 100%;
+            text-align: center;
+            height: 100px;
+            color: #fff;
+            margin-top: 20px;
+
+            .song-name {
+                font-size: 22px;
+                margin-bottom: 15px;
+            }
+
+            .singer-name {
+                font-size: 16px;
+                margin-bottom: 15px;
+            }
+
+            .album-name {
+                font-size: 12px;
+            }
+        }
+
+        .pro {
+            margin-top: 30px;
+            display: flex;
+
+            .cur-time,
+            .all-time {
+                width: 60px;
+                height: 40px;
+                color: #fff;
+                line-height: 40px;
+                text-align: center;
+            }
+
+            .pro-wrap {
+                position: relative;
+                flex: 1;
+                overflow: hidden;
+
+                .pro-bottom,
+                .pro-top {
+                    position: absolute;
+                    width: 100%;
+                    height: 1px;
+                    left: 0;
+                    top: 19px;
+                    background: rgba(255, 255, 255, .4);
+                }
+
+                .pro-top {
+                    transform: translateX(-100%);
+                    background: #fff;
+
+                    .slider {
+                        position: absolute;
+                        width: 20px;
+                        height: 20px;
+                        right: -11px;
+                        top: -10px;
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            top: 8px;
+                            right: 6px;
+                            width: 5px;
+                            height: 5px;
+                            border-radius: 50%;
+                            background: #fff;
+                        }
+                    }
+                }
+            }
+        }
+
+        .control {
+            position: absolute;
+            width: 100%;
+            height: 60px;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, .6);
+            display: flex;
+
+            .btn {
+                position: relative;
+                flex: 1;
+                height: 100%;
+                text-align: center;
+
+                .iconfont {
+                    font-size: 30px;
+                    color: #fff;
+                    line-height: 60px;
+                }
+
+                .icon-xihuan,
+                .icon-xihuan1 {
+                    position: absolute;
+                    left: 18px;
+                    display: none;
+                }
+
+                .icon-xihuan1 {
+                    font-size: 29px;
+                }
+
+                .icon-bofangsanjiaoxing {
+                    position: absolute;
+                    right: 12px;
+                    font-size: 32px;
+                    top: -1px;
+                    display: none;
+                }
+
+                .icon-zanting {
+                    position: absolute;
+                    font-size: 29px;
+                    right: 16px;
+                    top: 2px;
+                    display: none;
+                }
+
+                .active {
+                    display: block;
+                }
+            }
+        }
+    }
+}
